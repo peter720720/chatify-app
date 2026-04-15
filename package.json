@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/peter720720/chatify-app/issues"
   },
-  "homepage": "https://github.com/peter720720/chatify-app#readme"
+  "homepage": "https://github.com/peter720720/chatify-app#readme",
+  "dependencies": {
+    "@arcjet/inspect": "^1.0.0-beta.10",
+    "@arcjet/node": "^1.0.0-beta.10",
+    "cloudinary": "^2.5.1",
+    "cors": "^2.8.6"
+  }
 }

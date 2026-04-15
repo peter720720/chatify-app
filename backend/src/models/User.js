@@ -10,6 +10,11 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    gender: {
+        type: String,
+        enum: ["male", "female"],
+        required: true,
+    },
     password: {
         type: String,
         required: true,
@@ -19,7 +24,15 @@ const userSchema = new mongoose.Schema({
         type: String,
         default: ""
     },
-   }, 
+    resetPasswordOTP: {
+        type: String,
+        default: null
+    },
+    resetPasswordExpires: {
+        type: Date,
+        default: null
+    },
+   },
    { timestamps: true }  // createdAt & updatedAt
 );
 
